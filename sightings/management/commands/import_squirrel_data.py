@@ -11,10 +11,12 @@ class Command(BaseCommand):
             reader = csv.DictReader(fp)
             data = list(reader)
         def str_to_bool(s):
-            if s == 'true':
+            if s == 'true' or 'TRUE' or 'True':
                 return True
-            elif s == 'false':
+            elif s == 'false'or 'FALSE' or 'False':
                 return False
+            else:
+                return s
         for item in data:
             s = Squirrel(
                     latitude = item['Y'],
@@ -42,4 +44,5 @@ class Command(BaseCommand):
                     runs_from = str_to_bool(item['Runs from']),
                     )
             s.save()
+            
 
