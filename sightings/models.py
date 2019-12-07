@@ -3,6 +3,14 @@ from django.db import models
 # Create your models here.
 from django.utils.translation import gettext as _
 
+class Pet(models.Model):
+    running= models.BooleanField(
+    help_text = _('Whether the squirrel is running'),
+    )
+
+
+
+
 
 class Squirrel(models.Model):
 
