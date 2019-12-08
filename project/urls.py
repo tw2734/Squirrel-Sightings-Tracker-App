@@ -1,5 +1,4 @@
 """project URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
 Examples:
@@ -20,5 +19,6 @@ from sightings import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sightings/', include('sightings.urls')),
     path('map/', views.squirrel_location),
 ]
