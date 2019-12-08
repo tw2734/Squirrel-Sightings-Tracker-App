@@ -11,9 +11,9 @@ class Command(BaseCommand):
             reader = csv.DictReader(fp)
             data = list(reader)
         def str_to_bool(s):
-            if s == 'true' or 'TRUE' or 'True':
+            if (s == 'true') or (s == 'TRUE') or (s == 'True'):
                 return True
-            elif s == 'false'or 'FALSE' or 'False':
+            elif (s == 'false') or (s == 'FALSE') or (s == 'False'):
                 return False
             else:
                 return s
