@@ -1,0 +1,28 @@
+{% extends 'sightings/base.html' %}
+{% load crispy_forms_tags %}
+
+<head>
+  
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+{% block main %}
+<title>Squirrel Form</title>
+<body>
+  <div class="container">
+  <div align="left">
+  <h1>Squirrel Form</h1>
+  <hr>
+      <form action="" method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <br>
+          <input type="submit" name="Submit">
+      </form>
+ 
+  </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+</html>
