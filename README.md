@@ -55,6 +55,7 @@ Project Group 23, Section 1
 
 
 ## Contributors:
+Name: Jiaming Xie, Tianling Wang
 UNIs: [jx2389, tw2734]
 
 
