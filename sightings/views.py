@@ -118,12 +118,14 @@ def squir_stats(request):
 
 def squirrel_location(request):
     sightings = Squirrel.objects.all()
-    sightings = random.choices(sightings, k=100)
-
-    context = {
-        'sightings': sightings,
-    }
-    return render(request, 'sightings/map.html', context)
+    if not sightings:
+        return HttpResponse('Sorry! No squirrel in the database! Please import data first.')
+    else:
+        sightings = random.choices(sightings, k=100)
+        context = {
+            'sightings': sightings,
+        }
+        return render(request, 'sightings/map.html', context)
 
 
 def home(request):
