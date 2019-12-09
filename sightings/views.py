@@ -116,7 +116,7 @@ def squir_stats(request):
 
     return render(request, 'sightings/stats.html',context)
 
-def scquirrel_location(request):
+def squirrel_location(request):
     sightings = Squirrel.objects.all()
     sightings = random.choices(sightings, k=100)
 
@@ -125,3 +125,6 @@ def scquirrel_location(request):
     }
     return render(request, 'sightings/map.html', context)
 
+
+def home(request):
+    return render(request,'sightings/home.html')
