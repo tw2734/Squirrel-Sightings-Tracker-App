@@ -1,0 +1,44 @@
+{% extends 'sightings/base.html' %}
+<style>
+    *{
+    margin:0;
+    padding:0;
+    }
+.container{
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+</style>
+
+
+{% block main %}
+<title>Statistics of Squirrels</title>
+<body>
+    <div class= "container">
+        <p><h1>Stats of Squirrels</h1></p>
+            <p>
+                <li class="lead text-muted">Total Number of Squirrels: {{total}}</li>
+            
+                <li class="lead text-muted">Number of Juvenile Squirrel: {{Age_count}} - Proportion: {{Age}}</li>
+        
+                <li class="lead text-muted">Number of Squirrel Found in AM: {{AM_count}} - Proportion: {{AM}}</li>
+                <li class="lead text-muted">Number of Squirrel Found in PM: {{PM_count}} - Proportion: {{PM}}</li>
+        
+                <li class="lead text-muted">Number of Squirrel on the Ground: {{Loc_count}} - Proportion: {{Loc}}</li>
+    
+                <li class="lead text-muted">Number of Squirrel is Eating: {{Eat_count}} - Proportion: {{Eat}}</li>
+        
+
+                <li class="lead text-muted">Number of Squirrel is Running: {{Runs_count}} Proportion: {{Runs}}</li>
+                <li class="lead text-muted">Number of Squirrel is Foraging: {{Forage_count}} Proportion: {{Forage}}</li>
+        
+             </p>
+            <a href="../" class="btn btn-primary my-2">Check Squirrel List</a>
+      
+        </div>
+    </body>
+{% endblock %}
