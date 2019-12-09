@@ -1,7 +1,11 @@
 # Squirrel Sightings Tracker
 
 ## Application link:
-
+home page: https://squirrel-hunter-007.appspot.com/
+sightings (list all the squirrels): https://squirrel-hunter-007.appspot.com/sightings/
+Add a squirrel: https://squirrel-hunter-007.appspot.com/sightings/add/
+Squirrel stats: https://squirrel-hunter-007.appspot.com/sightings/stats/
+Squirrel map: https://squirrel-hunter-007.appspot.com/map/
 
 ## Discription:
 This is a web application built with Django. The aim of the app is to keep track of all the known squirrels in Central Park. Current squirrel records are imported from NYC Open Data [2018 Central Park Squirrel Census - Squirrel Data](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).
@@ -13,7 +17,7 @@ The application mainly provides two functions, which could be accessed through o
   - Creating a new sighting
   - General stats about the sightings
 2. Go to Squirrel Map
-  - Shows a map that displays the locations of the squirrel sightings on an OpenStreets map
+  - Showing a map that displays the locations of the squirrel sightings on an OpenStreets map
   
   
 Each squirrel record includes 23 fields:
